@@ -1,0 +1,18 @@
+#ident "@(#)tisfc040804000  tiB6125sy01  NLBAWAPPSDEV2  Rev.No. 2  13 Sep 18  apluijm"
+#ident "@(#)tisfc040804000  tiB6123sy05  NLBAWAPPSDEV2  Rev.No. 2  16 May 18  gjweerh"
+#ident "@(#)tisfc040804000  tiB6121sy01  NLBAWAPPSDEV1  Rev.No. 2  26 May 17  apluijm"
+#ident "@(#)tisfc040804000  tiB6119sy01  NLBAWAPPSDEV1  Rev.No. 2  03 Feb 17  skurikal"
+#ident "@(#)tisfc040804000  tiB6118sy01  NLBAWAPPSDEV1  Rev.No. 2  25 Oct 16  svschouw"
+#ident "@(#)tisfc040804000  tiB6116sy01  NLBAWAPPSDEV1  Rev.No. 2  01 Mar 16  egerrits"
+#ident "@(#)tisfc040804000  tiB60asy61  nlbaudv3  Rev.No. 2  29 Nov 11  akamstee"
+#ident "@(#)tisfc040804000  tiB60asy60  nlbaudv1  Rev.No. 2  14 Mar 11  msmits"
+
+detail.20:
+before.layout:
+
+	select tcibd001.*
+	from tcibd001
+	where tcibd001.item = :ticst001.sitm
+	selectdo
+		z99.dscc = tcibd001.dscc
+	endselect
